@@ -23,13 +23,13 @@ class MainWindow(Ui_MainForm, QWidget):
         self.setWindowTitle('Tic-Tac-Toe')
         self.connectButtons()
     
-    """
+    
     def paintEvent(self, event):# set background_img
         painter = QPainter(self)
         painter.drawRect(self.rect())
-        pixmap = QPixmap("./data/background1.jpg")#Change to the relative path of your own image
+        pixmap = QPixmap("./data/images/background.jpg")#Change to the relative path of your own image
         painter.drawPixmap(self.rect(), pixmap)
-    """
+    
     
     def keyPressEvent(self, event):
         print("cc")
@@ -57,6 +57,7 @@ class MainWindow(Ui_MainForm, QWidget):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     w = MainWindow()
-    #w.paintEngine()
+    w.paintEngine()
     w.show()
+    #w.showFullScreen()
     sys.exit(app.exec_())
