@@ -40,19 +40,18 @@ class MainWindow(Ui_MainForm, QWidget):
     def changeLanguage(self, lang):
         if self.currentTranslator is not None :
             QCoreApplication.removeTranslator(self.currentTranslator)
-        if lang=='fr':
+        if lang=='en':
             self.currentTranslator = None
         else:
             self.currentTranslator = QTranslator()
-            self.currentTranslator.load('firsttest-'+lang)
+            self.currentTranslator.load('data/translations/mainform_'+lang)
             QCoreApplication.installTranslator(self.currentTranslator)
         self.retranslateUi(self)
     
     def connectButtons(self):
-        """
         self.buttonFr.clicked.connect(lambda: self.changeLanguage('fr'))
         self.buttonEn.clicked.connect(lambda: self.changeLanguage('en'))
-        """
+        
         
 
 if __name__ == "__main__":
