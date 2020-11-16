@@ -67,8 +67,13 @@ class MyApp(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    w = MyApp()
-    #w.paintEngine()
-    w.show()
-    #w.showFullScreen()
-    sys.exit(app.exec_())
+    try:
+        w = MyApp()
+        #w.paintEngine()
+        w.show()
+        #w.showFullScreen()
+        sys.exit(app.exec_())
+    except Exception:
+        w.close()
+        QApplication.quit()
+        raise
