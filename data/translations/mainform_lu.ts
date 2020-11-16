@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="2.0">
 <context>
-    <name>MainForm</name>
+    <name>Form</name>
     <message>
-        <location filename="../../MainForm.py" line="131"/>
+        <location filename="../../MenuForm.py" line="58"/>
         <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../../MenuForm.py" line="59"/>
+        <source>Blablabla</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../MenuForm.py" line="60"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MainForm</name>
     <message>
         <location filename="../../MainForm.py" line="132"/>
         <source>Tic-Tac-Toe</source>
@@ -45,6 +58,11 @@
     <message>
         <location filename="../../MainForm.py" line="139"/>
         <source>Portugues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../MainForm.py" line="131"/>
+        <source>Tic-Tact-Toe</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -2,12 +2,25 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="fr_FR" sourcelanguage="en">
 <context>
-    <name>MainForm</name>
+    <name>Form</name>
     <message>
-        <location filename="../../MainForm.py" line="131"/>
+        <location filename="../../MenuForm.py" line="58"/>
         <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../../MenuForm.py" line="59"/>
+        <source>Blablabla</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../MenuForm.py" line="60"/>
+        <source>Back</source>
+        <translation>Retour</translation>
+    </message>
+</context>
+<context>
+    <name>MainForm</name>
     <message>
         <location filename="../../MainForm.py" line="132"/>
         <source>Tic-Tac-Toe</source>
@@ -29,11 +42,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../MainForm.py" line="136"/>
-        <source>Français</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../MainForm.py" line="137"/>
         <source>Deutsch</source>
         <translation type="unfinished"></translation>
@@ -46,6 +54,16 @@
     <message>
         <location filename="../../MainForm.py" line="139"/>
         <source>Portugues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../MainForm.py" line="131"/>
+        <source>Tic-Tact-Toe</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../MainForm.py" line="136"/>
+        <source>Français</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

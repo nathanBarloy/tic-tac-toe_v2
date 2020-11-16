@@ -5,8 +5,6 @@ Created on Fri Nov 13 11:17:24 2020
 @author: Nathan Barloy
 """
 
-import sys
-
 from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5.QtGui import QPixmap, QPainter
 from PyQt5.QtCore import QCoreApplication, QTranslator
@@ -16,26 +14,13 @@ from MainForm import Ui_MainForm
 
 
 class MainWindow(Ui_MainForm, QWidget):
-    def __init__(self):
+    def __init__(self, app):
         super(MainWindow, self).__init__()
+        self.app = app
         self.setupUi(self)
         self.currentTranslator = None
         self.setWindowTitle('Tic-Tac-Toe')
         self.connectButtons()
-    
-    
-    def paintEvent(self, event):# set background_img
-        painter = QPainter(self)
-        painter.drawRect(self.rect())
-        pixmap = QPixmap("./data/images/background.jpg")#Change to the relative path of your own image
-        painter.drawPixmap(self.rect(), pixmap)
-    
-    
-    def keyPressEvent(self, event):
-        print("cc")
-        if event.key()==Qt.Key_Escape:
-            self.close()
-            QApplication.quit()
     
     def changeLanguage(self, lang):
         if self.currentTranslator is not None :
@@ -47,17 +32,9 @@ class MainWindow(Ui_MainForm, QWidget):
             self.currentTranslator.load('data/translations/mainform_'+lang)
             QCoreApplication.installTranslator(self.currentTranslator)
         self.retranslateUi(self)
-    
+        
     def connectButtons(self):
         self.buttonFr.clicked.connect(lambda: self.changeLanguage('fr'))
         self.buttonEn.clicked.connect(lambda: self.changeLanguage('en'))
+        self.buttonStart.clicked.connect(lambda: self.app.display('sub'))
         
-        
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    w = MainWindow()
-    w.paintEngine()
-    w.show()
-    #w.showFullScreen()
-    sys.exit(app.exec_())

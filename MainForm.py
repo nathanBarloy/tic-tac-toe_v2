@@ -122,13 +122,13 @@ class Ui_MainForm(object):
         self.horizontalLayout.addWidget(self.buttonPt)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.horizontalLayout_2.addLayout(self.verticalLayout)
-
+        
         self.retranslateUi(MainForm)
         QtCore.QMetaObject.connectSlotsByName(MainForm)
 
     def retranslateUi(self, MainForm):
         _translate = QtCore.QCoreApplication.translate
-        MainForm.setWindowTitle(_translate("MainForm", "Form"))
+        MainForm.setWindowTitle(_translate("MainForm", "Tic-Tact-Toe"))
         self.labelTitle.setText(_translate("MainForm", "Tic-Tac-Toe"))
         self.labelIntro.setText(_translate("MainForm", "Introduction"))
         self.buttonStart.setText(_translate("MainForm", "Start"))
@@ -137,4 +137,5 @@ class Ui_MainForm(object):
         self.buttonDe.setText(_translate("MainForm", "Deutsch"))
         self.buttonEn.setText(_translate("MainForm", "English"))
         self.buttonPt.setText(_translate("MainForm", "Portugues"))
+    
 

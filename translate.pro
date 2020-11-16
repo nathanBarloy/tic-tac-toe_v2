@@ -1,4 +1,5 @@
-SOURCES = MainForm.py
+SOURCES = MainForm.py \
+		  MenuForm.py
 TRANSLATIONS = data/translations/mainform_fr.ts \
 			   data/translations/mainform_de.ts \
 			   data/translations/mainform_lu.ts \
