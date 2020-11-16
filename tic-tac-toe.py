@@ -19,6 +19,8 @@ class MyApp(QWidget):
     def __init__(self):
         super().__init__()
         self.stack = QStackedWidget(self)
+        self.setWindowTitle('Tic-Tac-Toe')
+        self.currentTranslator = None
         self.stackDict = {}
         
         self._mainWindow = MainWindow(self)
@@ -49,6 +51,18 @@ class MyApp(QWidget):
     
     def display(self, name):
         self.stack.setCurrentIndex(self.stackDict[name])
+    
+    def changeLanguage(self, lang):
+        if self.currentTranslator is not None :
+            QCoreApplication.removeTranslator(self.currentTranslator)
+        if lang=='en':
+            self.currentTranslator = None
+        else:
+            self.currentTranslator = QTranslator()
+            self.currentTranslator.load('data/translations/mainform_'+lang)
+            QCoreApplication.installTranslator(self.currentTranslator)
+        for i in range(self.stack.count()):
+            self.stack.widget(i).retranslateUi(self)
             
 
 if __name__ == "__main__":

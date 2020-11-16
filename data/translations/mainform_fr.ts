@@ -11,7 +11,7 @@
     <message>
         <location filename="../../MenuForm.py" line="59"/>
         <source>Blablabla</source>
-        <translation type="unfinished"></translation>
+        <translation>Oeoeoeoe</translation>
     </message>
     <message>
         <location filename="../../MenuForm.py" line="60"/>

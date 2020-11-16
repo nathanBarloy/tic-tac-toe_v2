@@ -18,23 +18,10 @@ class MainWindow(Ui_MainForm, QWidget):
         super(MainWindow, self).__init__()
         self.app = app
         self.setupUi(self)
-        self.currentTranslator = None
-        self.setWindowTitle('Tic-Tac-Toe')
         self.connectButtons()
-    
-    def changeLanguage(self, lang):
-        if self.currentTranslator is not None :
-            QCoreApplication.removeTranslator(self.currentTranslator)
-        if lang=='en':
-            self.currentTranslator = None
-        else:
-            self.currentTranslator = QTranslator()
-            self.currentTranslator.load('data/translations/mainform_'+lang)
-            QCoreApplication.installTranslator(self.currentTranslator)
-        self.retranslateUi(self)
         
     def connectButtons(self):
-        self.buttonFr.clicked.connect(lambda: self.changeLanguage('fr'))
-        self.buttonEn.clicked.connect(lambda: self.changeLanguage('en'))
+        self.buttonFr.clicked.connect(lambda: self.app.changeLanguage('fr'))
+        self.buttonEn.clicked.connect(lambda: self.app.changeLanguage('en'))
         self.buttonStart.clicked.connect(lambda: self.app.display('sub'))
         
