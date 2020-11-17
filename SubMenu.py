@@ -4,10 +4,8 @@ Created on Mon Nov 16 11:28:25 2020
 
 @author: Nathan Barloy
 """
-from PyQt5.QtWidgets import QApplication, QWidget
-from PyQt5.QtGui import QPixmap, QPainter
-from PyQt5.QtCore import QCoreApplication, QTranslator
-from PyQt5.Qt import Qt
+
+from PyQt5.QtWidgets import QWidget
 
 from MenuForm import Ui_Form
 
@@ -21,3 +19,4 @@ class SubMenu(Ui_Form, QWidget):
         
     def connectButtons(self):
         self.buttonMenu.clicked.connect(lambda: self.app.display('main'))
+        self.buttonPlay.clicked.connect(lambda: self.app.display('board'))

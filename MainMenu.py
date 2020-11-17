@@ -5,10 +5,7 @@ Created on Fri Nov 13 11:17:24 2020
 @author: Nathan Barloy
 """
 
-from PyQt5.QtWidgets import QApplication, QWidget
-from PyQt5.QtGui import QPixmap, QPainter
-from PyQt5.QtCore import QCoreApplication, QTranslator
-from PyQt5.Qt import Qt
+from PyQt5.QtWidgets import QWidget
 
 from MainForm import Ui_MainForm
 

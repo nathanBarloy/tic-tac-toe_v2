@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1055, 772)
+        Form.resize(1375, 1032)
         Form.setStyleSheet("QPushButton {\n"
 "    color: #333;\n"
 "    border: 2px solid #555;\n"
@@ -34,6 +34,7 @@ class Ui_Form(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout(Form)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setSpacing(50)
         self.verticalLayout.setObjectName("verticalLayout")
         self.label = QtWidgets.QLabel(Form)
         font = QtGui.QFont()
@@ -42,6 +43,12 @@ class Ui_Form(object):
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label)
+        self.buttonPlay = QtWidgets.QPushButton(Form)
+        font = QtGui.QFont()
+        font.setPointSize(30)
+        self.buttonPlay.setFont(font)
+        self.buttonPlay.setObjectName("buttonPlay")
+        self.verticalLayout.addWidget(self.buttonPlay, 0, QtCore.Qt.AlignHCenter)
         self.buttonMenu = QtWidgets.QPushButton(Form)
         font = QtGui.QFont()
         font.setPointSize(26)
@@ -57,5 +64,6 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label.setText(_translate("Form", "Blablabla"))
+        self.buttonPlay.setText(_translate("Form", "Play"))
         self.buttonMenu.setText(_translate("Form", "Back"))
 

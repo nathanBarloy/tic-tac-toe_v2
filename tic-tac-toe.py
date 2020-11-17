@@ -13,6 +13,7 @@ from PyQt5.Qt import Qt
 
 from MainMenu import MainWindow
 from SubMenu import SubMenu
+from Board import Board
 
 
 class MyApp(QWidget):
@@ -25,11 +26,14 @@ class MyApp(QWidget):
         
         self._mainWindow = MainWindow(self)
         self._subMenu = SubMenu(self)
+        self._board = Board(self)
         
         self.stack.addWidget(self._mainWindow)
         self.stackDict["main"] = 0
         self.stack.addWidget(self._subMenu)
         self.stackDict["sub"] = 1
+        self.stack.addWidget(self._board)
+        self.stackDict["board"] = 2
         
         hbox = QHBoxLayout(self)
         hbox.addWidget(self.stack)

@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="2.0">
 <context>
+    <name>Board</name>
+    <message>
+        <location filename="../../BoardUI.py" line="148"/>
+        <source>Board</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../BoardUI.py" line="149"/>
+        <source>Tap the board to play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../BoardUI.py" line="150"/>
+        <source>Things are happening in this zone, like the result of the match</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../BoardUI.py" line="151"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Form</name>
     <message>
-        <location filename="../../MenuForm.py" line="58"/>
+        <location filename="../../MenuForm.py" line="65"/>
         <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../MenuForm.py" line="59"/>
+        <location filename="../../MenuForm.py" line="66"/>
         <source>Blablabla</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../MenuForm.py" line="60"/>
+        <location filename="../../MenuForm.py" line="68"/>
         <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../MenuForm.py" line="67"/>
+        <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
