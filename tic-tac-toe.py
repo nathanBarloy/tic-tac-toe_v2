@@ -24,6 +24,7 @@ class MyApp(QWidget):
         super().__init__()
         self.setWindowTitle('Tic-Tac-Toe')
         self.resize(2500,1400)
+        self.setStyleSheet(open("style.qss").read())
         
         self.currentTranslator = None
         self.stack = QStackedWidget(self)

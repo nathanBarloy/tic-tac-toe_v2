@@ -11,26 +11,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainForm(object):
     def setupUi(self, MainForm):
         MainForm.setObjectName("MainForm")
-        MainForm.resize(1056, 773)
-        MainForm.setStyleSheet("QPushButton {\n"
-"    color: #333;\n"
-"    border: 2px solid #555;\n"
-"    border-radius: 20px;\n"
-"    border-style: outset;\n"
-"    background: qradialgradient(\n"
-"        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,\n"
-"        radius: 1.35, stop: 0 #fff, stop: 1 #888\n"
-"        );\n"
-"    padding: 5px;\n"
-"    }\n"
-"\n"
-"QPushButton:pressed {\n"
-"    border-style: inset;\n"
-"    background: qradialgradient(\n"
-"        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,\n"
-"        radius: 1.35, stop: 0 #fff, stop: 1 #ddd\n"
-"        );\n"
-"    }")
+        MainForm.resize(2171, 1552)
+        MainForm.setStyleSheet("")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(MainForm)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.verticalLayout = QtWidgets.QVBoxLayout()
@@ -122,7 +104,7 @@ class Ui_MainForm(object):
         self.horizontalLayout.addWidget(self.buttonPt)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.horizontalLayout_2.addLayout(self.verticalLayout)
-        
+
         self.retranslateUi(MainForm)
         QtCore.QMetaObject.connectSlotsByName(MainForm)
 
@@ -137,5 +119,4 @@ class Ui_MainForm(object):
         self.buttonDe.setText(_translate("MainForm", "Deutsch"))
         self.buttonEn.setText(_translate("MainForm", "English"))
         self.buttonPt.setText(_translate("MainForm", "Portugues"))
-    
 
