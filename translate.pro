@@ -1,6 +1,7 @@
 SOURCES = MainForm.py \
 		  MenuForm.py \
-		  BoardUI.py
+		  BoardUI.py \
+		  WarningUI.py
 TRANSLATIONS = data/translations/mainform_fr.ts \
 			   data/translations/mainform_de.ts \
 			   data/translations/mainform_lu.ts \

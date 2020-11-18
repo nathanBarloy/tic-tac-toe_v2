@@ -19,7 +19,13 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
-        <number>60</number>
+        <number>200</number>
+       </property>
+       <property name="topMargin">
+        <number>100</number>
+       </property>
+       <property name="bottomMargin">
+        <number>50</number>
        </property>
        <item>
         <widget class="QLabel" name="label">
@@ -72,11 +78,11 @@
          </property>
         </widget>
        </item>
-       <item>
+       <item alignment="Qt::AlignHCenter">
         <widget class="QPushButton" name="buttonBack">
          <property name="font">
           <font>
-           <pointsize>20</pointsize>
+           <pointsize>40</pointsize>
           </font>
          </property>
          <property name="text">

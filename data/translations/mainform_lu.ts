@@ -94,4 +94,19 @@
         <translation type="unfinished"></translation>
     </message>
 </context>
+<context>
+    <name>WarningDialog</name>
+    <message>
+        <location filename="../../WarningUI.py" line="31"/>
+        <source>WARNING</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WarningUI.py" line="32"/>
+        <source>WARNING
+
+Touch the screen if you don&apos;t want to go back to the main menu.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>
