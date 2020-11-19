@@ -17,3 +17,7 @@ QPushButton:pressed {
         radius: 1.35, stop: 0 #fff, stop: 1 #ddd
         );
     }
+
+#buttonLu {
+	background-image: url(data/images/letzebuergesch.png);
+	}

@@ -1,1 +1,1 @@
-pyinstaller -w --name "Tic-Tac-Toe" --icon="data/images/tictactoe.ico" --add-data="data;data"  --noconfirm tic-tac-toe.py
+pyinstaller -w --name "Tic-Tac-Toe" --add-data="data;data" --icon="data/images/tictactoe.ico" --noconfirm tic-tac-toe.py

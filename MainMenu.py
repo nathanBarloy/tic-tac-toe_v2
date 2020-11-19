@@ -6,6 +6,7 @@ Created on Fri Nov 13 11:17:24 2020
 """
 
 from PyQt5.QtWidgets import QWidget
+from PyQt5.QtGui import QIcon
 
 from MainForm import Ui_MainForm
 
@@ -15,7 +16,11 @@ class MainWindow(Ui_MainForm, QWidget):
         super(MainWindow, self).__init__()
         self.app = app
         self.setupUi(self)
+        self.setupButtons()
         self.connectButtons()
+        
+    def setupButtons(self):
+        self.buttonFr.setIcon(QIcon('data/images/francais.png'))
         
     def connectButtons(self):
         self.buttonFr.clicked.connect(lambda: self.app.changeLanguage('fr'))
